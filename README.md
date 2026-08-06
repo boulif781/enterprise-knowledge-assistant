@@ -20,7 +20,7 @@ Instead of manually searching hundreds of pages, users can ask questions, and th
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 > *(Replace this image after creating the architecture diagram.)*
 
